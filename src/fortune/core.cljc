@@ -1,18 +1,22 @@
 (ns fortune.core
-  (:require 
+  (:require
    [fortune.db :refer [db]]))
 
 
-(defn cookie []
-  (let [size (count db)
-        index (rand-int size)]
-    (nth db index)))
+(defn cookie
+  ([index]
+   (nth db index))
+  ([]
+   (let [size (count db)
+         index (rand-int size)] 
+     (cookie index))))
 
 
 (comment
-  
+
   (cookie)
   
+  (cookie 5)
   )
 
 

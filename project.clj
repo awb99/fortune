@@ -1,4 +1,4 @@
-(defproject awb99.fortune "0.0.1"
+(defproject awb99.fortune "0.0.2"
   :description "Fortune Cookie Wisdom"
   :url "https://github.com/awb99/fortune"
   :license {:name "MIT License"
